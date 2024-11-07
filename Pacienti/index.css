@@ -1,0 +1,290 @@
+body {
+  background-color: #F0F2F5;
+  font-size: 14px;
+  margin: 0;
+}
+
+#main {
+  background-color: #009688;
+  height: 250px;
+  z-index: 2;
+  position: absolute;
+}
+
+.row {
+  margin-top: 40px;
+  min-height: 400px;
+}
+
+#dash {
+  height: auto;
+  margin-top: 40px;
+  background-color: #ffff;
+  border-radius: 20px;
+}  
+
+.selected{
+ font-weight: 600 !important;
+ 
+}
+ 
+
+
+
+/* Mobile styles */
+@media (max-width: 887px) {
+ 
+  #sidebar {
+      display: none; /* Hide the sidebar */
+  }
+
+  #dash {
+      width: 95%; /* Full width for main content */
+      position: relative;
+      overflow: scroll;
+     
+      
+      
+  }
+
+
+
+  .toggle-btn {
+      display: block; /* Show toggle button */
+  }
+
+  #card .col-6 {
+      flex: 0 0 100%; /* Each card takes full width */
+      max-width: 100%; /* Ensure max-width is 100% */
+  }
+
+  .card-body {
+      border: 1px dotted #0d6efd;
+      border-radius: 5px;
+  }
+
+  th{
+    position: sticky;
+    top: 0;
+  }
+
+  th, td {
+      padding: 10px; /* Adjust padding for mobile */
+      white-space: nowrap;
+      
+     
+  }
+
+  #patientsTable th, #patientsTable td {
+      padding: 18px; /* Less padding for table cells on mobile */
+      font-size: 10px; /* Smaller font size for mobile */
+  }
+
+  #patientsTable {
+      font-size: 12px; /* Table font size for mobile */
+  }
+
+
+  #shto, #edito, #del {
+      width: 100%; /* Full width buttons on mobile */
+      margin: 5px 0; /* Margin between buttons */
+      padding: 8px; /* Adjust padding for buttons */
+  }
+
+}
+
+/* Corrected range to show styles for screens between 512px and 886px */
+@media (max-width: 886px) and (min-width: 512px) {
+  #sidebar {
+      display: none; /* Hide the sidebar */
+  }
+
+  #dash {
+      width: 100%; /* Full width for main content */
+  }
+
+  .toggle-btn {
+      display: block; /* Show toggle button */
+  }
+
+  #card .col-6 {
+      flex: 0 0 50%; /* Each card takes 50% width */
+      max-width: 50%; /* Ensure max-width is 50% */
+      margin-top: 15px;
+  }
+}
+
+@media (min-width: 888px) {
+  .toggle-btn {
+      display: none; /* Hide toggle button */
+  }
+  .pacientet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+table.dataTable tbody th,
+table.dataTable tbody td {
+  padding: 0px !important;
+  color: rgb(39, 39, 39) !important;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+  padding: 0px !important;
+}
+
+th, td {
+  padding: 40px; /* Add some padding for aesthetics */
+  align-items: start;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.table-cell {
+  height: 50px; /* Set a fixed height for table cells if needed */
+}
+
+#patientsTable th:nth-child(1), /* ID */
+#patientsTable td:nth-child(1) {
+  width: 8%;
+}
+
+#patientsTable th:nth-child(2), /* Nr Personal */
+#patientsTable td:nth-child(2) {
+  width: 12%;
+}
+
+#patientsTable th:nth-child(3), /* Emri */
+#patientsTable td:nth-child(3) {
+  width: 10%;
+}
+
+#patientsTable th:nth-child(4), /* Mbiemri */
+#patientsTable td:nth-child(4) {
+  width: 10%;
+}
+
+#patientsTable th:nth-child(5), /* Emri Prindit */
+#patientsTable td:nth-child(5) {
+  width: 10%;
+}
+
+#patientsTable th:nth-child(6), /* Gjinia */
+#patientsTable td:nth-child(6) {
+  width: 10%;
+}
+
+#patientsTable th:nth-child(7), /* Datelindja */
+#patientsTable td:nth-child(7) {
+  width: 10%;
+}
+
+#patientsTable th:nth-child(8), /* Adresa */
+#patientsTable td:nth-child(8) {
+  width: 25%;
+}
+
+
+
+}
+
+.btn {
+  background-color: #009688;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 85px 0;
+}
+
+
+
+#patientsTable thead th {
+  color: #A8B2C4;
+  border-bottom: 1px solid #b2b8c3;
+}
+
+#patientsTable tbody td {
+  color: black;
+  border-bottom: 1px solid #adb3bf;
+}
+
+
+
+
+#shto {
+  background-color: #344767;
+  padding: 4px 0;
+  height: 34px;
+  width: 84px;
+  border: none;
+}
+
+#edito, #del {
+  background-color: #e3e4e7;
+  padding: 4px 0;
+  height: 34px;
+  color: #344767;
+  width: 84px;
+  border: none;
+  margin-left: 15px;
+}
+
+#butons {
+  padding-right: 25px;
+}
+/* Hide sorting icons for DataTables */
+
+.modal-content {
+  border-radius: 10px; /* Rounded corners */
+}
+
+.modal-header {
+  background-color: #009688; /* Bootstrap primary color */
+  color: white; /* White text for header */
+  border-top-left-radius: 10px; /* Match header with rounded corners */
+  border-top-right-radius: 10px; /* Match header with rounded corners */
+}
+
+.modal-footer {
+  border-top: none; /* Remove the border from the footer */
+}
+
+.btn-primary {
+  background-color: #0056b3; /* Darker blue for primary button */
+}
+.btn-secondary {
+  background-color: #cf3131; /* Darker blue for primary button */
+  outline: none;
+}
+
+.btn-primary:hover {
+  background-color: #004085; /* Even darker blue on hover */
+  border-color: #003052; /* Even darker border */
+}
+
+.form-control {
+  border-radius: 5px; /* Rounded input fields */
+}
+
+.table {
+
+  border-radius: 5px; /* Rounded corners for table */
+  overflow: hidden; /* To keep rounded corners */
+}
+
+th, td {
+  vertical-align: middle; /* Center align text */
+
+}
+
+
+.table>:not(caption)>*>* {
+  padding: 1rem; /* Custom padding */
+  background-color: transparent ; /* Custom text color */
+  /* Other custom styles */
+}

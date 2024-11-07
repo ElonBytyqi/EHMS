@@ -1,0 +1,200 @@
+body{
+    background-color: #F0F2F5;
+}
+#main {
+    background-color: #009688;
+    height: 250px;
+    z-index: 2;
+    position: absolute;
+   }
+   body{
+    margin: 0;
+   }
+   .row{
+ 
+    margin-top: 40px;
+    min-height: 400px;
+   
+   }
+
+      
+    #sidebar {
+    background-color: #ffff;
+    overflow-y: scroll;
+ 
+     position: sticky;
+  top: 0;
+   
+    max-height: 670px;
+    min-height: 670px;
+   
+    border-radius: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    padding-top: 20px;
+  }
+
+  .sidebar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .sidebar .profile img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  .sidebar .profile h5 {
+    margin-top: 10px;
+    color: #333;
+  }
+  .sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    font-weight: 500;
+  }
+  .sidebar .nav-link i {
+    font-size: 1.2rem;
+  }
+  .sidebar .nav-link span {
+    margin-left: 10px; /* Hapësira mes ikonës dhe tekstit */
+  }
+  .sidebar .nav-link.active {
+    background-color: #e0f2f1;
+    border-radius: 5px;
+  }
+
+  
+  /* Ngjyra të ndryshme për çdo element */
+  .sidebar .nav-item:nth-child(1) .nav-link i { color: #009688; } /* Kryefaqja */
+  .sidebar .nav-item:nth-child(1) .nav-link span { color: #394C6B; }
+  
+  .sidebar .nav-item:nth-child(2) .nav-link i { color: #d32f2f; } /* Pacientët */
+  .sidebar .nav-item:nth-child(2) .nav-link span { color: #394C6B; }
+  
+  .sidebar .nav-item:nth-child(3) .nav-link i { color: #f57c00; } /* Terminet */
+  .sidebar .nav-item:nth-child(3) .nav-link span { color: #394C6B; }
+  
+  .sidebar .nav-item:nth-child(4) .nav-link i { color: #388e3c; } /* Vizitat */
+  .sidebar .nav-item:nth-child(4) .nav-link span { color: #394C6B; }
+  
+  .sidebar .nav-item:nth-child(5) .nav-link i { color: #1976d2; } /* Hospitalizimet */
+  .sidebar .nav-item:nth-child(5) .nav-link span { color: #394C6B; }
+  
+  .sidebar .nav-item:nth-child(6) .nav-link i { color: #6a1b9a; } /* Raportet */
+  .sidebar .nav-item:nth-child(6) .nav-link span { color: #394C6B; }
+
+  
+  .sidebar .nav-item:nth-child(7) .nav-link i { color: #1976d2; } /* Raportet */
+  .sidebar .nav-item:nth-child(7) .nav-link span { color: #394C6B; }
+
+
+
+
+  .submenu .nav-item:nth-child(1) .nav-link i { color: #6a1b9a; } /* Raporti i Hospitalizimeve */
+.submenu .nav-item:nth-child(1) .nav-link span { color: #394C6B; }
+
+.submenu .nav-item:nth-child(2) .nav-link i { color: #6a1b9a; } /* Raporti i Vizitave */
+.submenu .nav-item:nth-child(2) .nav-link span { color: #394C6B; }
+
+.submenu .nav-item:nth-child(3) .nav-link i { color: #6a1b9a; } /* Raporti i Përgjithshëm */
+.submenu .nav-item:nth-child(3) .nav-link span { color: #394C6B; }
+
+.submenu .nav-item:nth-child(4) .nav-link i { color: #6a1b9a; } /* Kartela e Pacientit */
+.submenu .nav-item:nth-child(4) .nav-link span { color: #394C6B; }
+
+.submenu .nav-link {
+    font-size: 14px; /* Smaller font size for submenu items */
+    color: #6c757d; /* Default color for submenu items */
+    margin-left: 8px;
+}
+
+.submenu .nav-link:hover {
+    color: #0056b3; /* Change color on hover */
+}
+
+.submenu .nav-link.active {
+    font-weight: bold; /* Bold active link */
+    color: #0d6efd; /* Bootstrap primary color for active link */
+}
+
+  .sidebar .btn {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #konfigurimet{
+
+    
+    padding-top: 40px
+  }
+
+#configSubmenu .nav-item i{
+    color: #394C6B;
+}
+#configSubmenu .nav-item span{
+    color: #394C6B;
+}
+.profile{
+    border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+#row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-title{
+    font-size: 18px;
+}
+
+
+@media (max-width: 887px) {
+    #sidebar {
+        display: none; /* Hide the sidebar */
+    }
+
+    #dash {
+        width: 100%; /* Full width for main content */
+        
+    }
+
+    .toggle-btn {
+        display: block; /* Show toggle button */
+    }
+
+    #card .col-6 {
+        flex: 0 0 100%; /* Each card takes full width */
+        max-width: 100%; /* Ensure max-width is 100% */
+    }
+    .card-body{
+      
+      border: 1px dotted #0d6efd;
+      border-radius: 5px;
+    }
+}
+
+/* Corrected range to show styles for screens between 512px and 886px */
+@media (max-width: 886px) and (min-width: 512px) {
+    #sidebar {
+        display: none; /* Hide the sidebar */
+    }
+
+    #dash {
+        width: 100%; /* Full width for main content */
+    }
+
+    .toggle-btn {
+        display: block; /* Show toggle button */
+    }
+
+    #card .col-6 {
+        flex: 0 0 50%; /* Each card takes 50% width */
+        max-width: 50%; /* Ensure max-width is 50% */
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 888px) {
+    .toggle-btn {
+        display: none; /* Hide toggle button */
+    }
+}
